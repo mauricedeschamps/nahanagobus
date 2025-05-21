@@ -149,12 +149,20 @@
             border-radius: 5px;
         }
         
-        .transport-image {
+        .transport-image-container {
             width: 100%;
-            max-height: 200px;
-            object-fit: cover;
-            border-radius: 5px;
+            padding: 0 1rem;
+            box-sizing: border-box;
             margin: 1rem 0;
+        }
+        
+        .transport-image {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            margin: 0 auto;
+            border-radius: 5px;
+            object-fit: contain;
         }
     </style>
 </head>
@@ -243,7 +251,9 @@
     <div class="detail-page" id="carDetail">
         <button class="back-button" onclick="backToMain()">← Back</button>
         <h2 id="car-detail-title">By Car: Naha to Nago</h2>
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTj3VeMw_kfoK6nPiL2AfjvCSNdXUEy2-b8yUboz7KT32X-vD_zh753Z9I&s=10">
+        <div class="transport-image-container">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTj3VeMw_kfoK6nPiL2AfjvCSNdXUEy2-b8yUboz7KT32X-vD_zh753Z9I&s=10" class="transport-image">
+        </div>
         <p id="car-detail-highway"><strong>Highway:</strong> ¥1,340 (ETC ¥860)</p>
         <p id="car-detail-normal"><strong>Normal road:</strong> National Route 58</p>
         <p><strong id="car-detail-distance">Distance:</strong> About 70km</p>
@@ -253,7 +263,9 @@
     <div class="detail-page" id="oasDetail">
         <button class="back-button" onclick="backToMain()">← Back</button>
         <h2>OAS (Okinawa Airport Shuttle)</h2>
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSChnR9gk50M6imTbhjEHQ1itY9ezPrfkFE_6ChVCjgjUchMZofeuTBZpe&s=10">
+        <div class="transport-image-container">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSChnR9gk50M6imTbhjEHQ1itY9ezPrfkFE_6ChVCjgjUchMZofeuTBZpe&s=10" class="transport-image">
+        </div>
         <p id="oas-detail-route"><strong>Route:</strong> Airport, Asahibashi Bus Terminal, Kencho-kita → (via Chubu Resort) → Nago City Office (continues to Motobu Port, Churaumi Aquarium area)</p>
         <p class="price">¥2,000</p>
         <p id="oas-detail-note">*Does not stop at Nago Bus Terminal</p>
@@ -264,7 +276,9 @@
     <div class="detail-page" id="ykbDetail">
         <button class="back-button" onclick="backToMain()">← Back</button>
         <h2>YKB (Yanbaru Express Bus)</h2>
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKaKLiU7_jZfzZgk_MI_W-POzKOHrz6VKIjy4V138FhbCv0AUKyntxxBI&s=10">
+        <div class="transport-image-container">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKaKLiU7_jZfzZgk_MI_W-POzKOHrz6VKIjy4V138FhbCv0AUKyntxxBI&s=10" class="transport-image">
+        </div>
         <p id="ykb-detail-route"><strong>Route:</strong> Airport, Kencho-kita, Tomari Port → (Highway) → Nago City Office (Nago Bus Terminal, Motobu Port, Churaumi Aquarium area, Nakijin)</p>
         <p class="price">¥1,650</p>
         <p id="ykb-detail-note">*Does not stop at Asahibashi Bus Terminal (4 min walk from Kencho-kita)</p>
@@ -275,7 +289,9 @@
     <div class="detail-page" id="bus111Detail">
         <button class="back-button" onclick="backToMain()">← Back</button>
         <h2>Bus #111</h2>
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVq4-A6gha1y4yQ3psg1cYcU394_D0_6Wbsw&s">
+        <div class="transport-image-container">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVq4-A6gha1y4yQ3psg1cYcU394_D0_6Wbsw&s" class="transport-image">
+        </div>
         <p id="bus111-detail-route"><strong>Route:</strong> Airport, Asahibashi Bus Terminal → (Highway bus stops) → Nago City Office, Nago Bus Terminal (final stop)</p>
         <p class="price">¥2,420</p>
         <p id="bus111-detail-note">*Does not stop at Kencho-kita. Does not go to Motobu/Churaumi Aquarium area.</p>
@@ -291,7 +307,9 @@
     <div class="detail-page" id="bus117Detail">
         <button class="back-button" onclick="backToMain()">← Back</button>
         <h2>Bus #117</h2>
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTivqR7tZcucR5SjMC4YBl5X6GbkcnNXTn-P0Hdupc-MOlajsPFaZ-7lL0&s=10">
+        <div class="transport-image-container">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTivqR7tZcucR5SjMC4YBl5X6GbkcnNXTn-P0Hdupc-MOlajsPFaZ-7lL0&s=10" class="transport-image">
+        </div>
         <p id="bus117-detail-route"><strong>Route:</strong> Airport, Asahibashi Bus Terminal → (Highway bus stops) → Nago City Office, Nago Bus Terminal, Motobu, Churaumi Aquarium area</p>
         <p class="price">¥2,420</p>
         <p id="bus117-detail-note">*Does not stop at Kencho-kita</p>
@@ -307,7 +325,9 @@
     <div class="detail-page" id="bus20Detail">
         <button class="back-button" onclick="backToMain()">← Back</button>
         <h2>Bus #20/120</h2>
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0hH9RRkpicqfnwC76IozHqOnNwULcrK7eIIQ8bLTGRkVV-98y88vimS8&s=10">
+        <div class="transport-image-container">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0hH9RRkpicqfnwC76IozHqOnNwULcrK7eIIQ8bLTGRkVV-98y88vimS8&s=10" class="transport-image">
+        </div>
         <p id="bus20-detail-route"><strong>Route:</strong> Local bus stopping at all stations along west coast</p>
         <p class="price">¥2,190</p>
         <p id="bus20-detail-time"><strong>Time:</strong> About 2.5 hours (not recommended for quick travel)</p>
@@ -321,7 +341,9 @@
     <div class="detail-page" id="ferryDetail">
         <button class="back-button" onclick="backToMain()">← Back</button>
         <h2 id="ferry-detail-title">High-speed Ferry</h2>
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK7lV3wzYL0kHRGXMVdWrrqkqQw8FIlgUkMsSw9aQw-ZbdGxu0Hm59aAc&s=10">
+        <div class="transport-image-container">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK7lV3wzYL0kHRGXMVdWrrqkqQw8FIlgUkMsSw9aQw-ZbdGxu0Hm59aAc&s=10" class="transport-image">
+        </div>
         <p id="ferry-detail-schedule1"><strong>Schedule 1:</strong> Naha Tomari Port (08:30) → (09:45) Nago Port (10:05) → Toguchi Port (10:30)</p>
         <p id="ferry-detail-schedule2"><strong>Schedule 2:</strong> Toguchi Port (10:50) → Naha Tomari Port (12:05) *Does not stop at Nago Port</p>
         <p id="ferry-detail-schedule3"><strong>Schedule 3:</strong> Naha Tomari Port (14:25) → Toguchi Port (15:40) *Does not stop at Nago Port</p>
