@@ -199,14 +199,14 @@
         
         <div class="transport-card" data-transport="bus111">
             <h2>Bus #111</h2>
-            <p id="bus111-route">Airport, Naha Asahibashi Bus Terminal → (Highway bus stops) → Nago City Office, Nago Bus Terminal</p>
+            <p id="bus111-route">Airport, Asahibashi Bus Terminal → (Highway bus stops) → Nago City Office, Nago Bus Terminal</p>
             <p id="bus111-note">*Does not stop at Kencho-kita. Does not go to Motobu/Churaumi Aquarium area.</p>
             <p class="price">¥2,420</p>
         </div>
         
         <div class="transport-card" data-transport="bus117">
             <h2>Bus #117</h2>
-            <p id="bus117-route">Airport, Naha Asahibashi Bus Terminal → (Highway bus stops) → Nago City Office, Nago Bus Terminal, Motobu, Churaumi Aquarium area</p>
+            <p id="bus117-route">Airport,Asahibashi Bus Terminal → (Highway bus stops) → Nago City Office, Nago Bus Terminal, Motobu, Churaumi Aquarium area</p>
             <p id="bus117-note">*Does not stop at Kencho-kita</p>
             <p class="price">¥2,420</p>
         </div>
@@ -276,7 +276,7 @@
         <button class="back-button" onclick="backToMain()">← Back</button>
         <h2>Bus #111</h2>
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVq4-A6gha1y4yQ3psg1cYcU394_D0_6Wbsw&s">
-        <p id="bus111-detail-route"><strong>Route:</strong> Airport, Naha Asahibashi Bus Terminal → (Highway bus stops) → Nago City Office, Nago Bus Terminal (final stop)</p>
+        <p id="bus111-detail-route"><strong>Route:</strong> Airport, Asahibashi Bus Terminal → (Highway bus stops) → Nago City Office, Nago Bus Terminal (final stop)</p>
         <p class="price">¥2,420</p>
         <p id="bus111-detail-note">*Does not stop at Kencho-kita. Does not go to Motobu/Churaumi Aquarium area.</p>
         <p><strong>Bus Companies:</strong> 
@@ -292,7 +292,7 @@
         <button class="back-button" onclick="backToMain()">← Back</button>
         <h2>Bus #117</h2>
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTivqR7tZcucR5SjMC4YBl5X6GbkcnNXTn-P0Hdupc-MOlajsPFaZ-7lL0&s=10">
-        <p id="bus117-detail-route"><strong>Route:</strong> Airport, Naha Asahibashi Bus Terminal → (Highway bus stops) → Nago City Office, Nago Bus Terminal, Motobu, Churaumi Aquarium area</p>
+        <p id="bus117-detail-route"><strong>Route:</strong> Airport, Asahibashi Bus Terminal → (Highway bus stops) → Nago City Office, Nago Bus Terminal, Motobu, Churaumi Aquarium area</p>
         <p class="price">¥2,420</p>
         <p id="bus117-detail-note">*Does not stop at Kencho-kita</p>
         <p><strong>Bus Companies:</strong> 
@@ -393,12 +393,12 @@
                 document.getElementById('oas-note').textContent = '※名護バスターミナルには停まりません';
                 
                 document.getElementById('ykb-route').textContent = '空港、県庁北、泊港→(高速道路)→名護市役所';
-                document.getElementById('ykb-note').textContent = '※那覇旭橋バスターミナルには停まりません (県庁北まで徒歩4分)';
+                document.getElementById('ykb-note').textContent = '※旭橋バスターミナルには停まりません (県庁北まで徒歩4分)';
                 
-                document.getElementById('bus111-route').textContent = '空港、那覇旭橋バスターミナル→(高速道路バス停)→名護市役所、名護バスターミナル終点';
+                document.getElementById('bus111-route').textContent = '空港、旭橋バスターミナル→(高速道路バス停)→名護市役所、名護バスターミナル終点';
                 document.getElementById('bus111-note').textContent = '※県庁北には停まりません。本部港、美ら海水族館エリアへは行きません。';
                 
-                document.getElementById('bus117-route').textContent = '空港、那覇旭橋バスターミナル→名護市役所、名護バスターミナル、本部港、美ら海水族館エリアまで運行';
+                document.getElementById('bus117-route').textContent = '空港、旭橋バスターミナル→名護市役所、名護バスターミナル、本部港、美ら海水族館エリアまで運行';
                 document.getElementById('bus117-note').textContent = '※県庁北には停まりません。';
                 
                 document.getElementById('bus20-route').textContent = '各駅バス (おすすめしません - 2時間半かかります)';
@@ -432,15 +432,15 @@
                 document.getElementById('oas-detail-features').innerHTML = '<strong>特徴:</strong> 空港からリゾート地への直行便、快適な座席';
                 
                 document.getElementById('ykb-detail-route').innerHTML = '<strong>路線:</strong> 空港、県庁北、泊港→(高速道路)→名護市役所 (名護バスターミナル、本部港、美ら海水族館エリア、今帰仁まで)';
-                document.getElementById('ykb-detail-note').textContent = '※那覇旭橋バスターミナルには停まりません (県庁北まで徒歩4分)';
+                document.getElementById('ykb-detail-note').textContent = '※旭橋バスターミナルには停まりません (県庁北まで徒歩4分)';
                 document.getElementById('ykb-detail-website').innerHTML = '<strong>ウェブサイト:</strong>';
                 document.getElementById('ykb-detail-features').innerHTML = '<strong>特徴:</strong> 高速道路経由の急行サービス、北部やんばる地域へアクセス';
                 
-                document.getElementById('bus111-detail-route').innerHTML = '<strong>路線:</strong> 空港、那覇旭橋バスターミナル→(高速道路バス停)→名護市役所、名護バスターミナル (終点)';
+                document.getElementById('bus111-detail-route').innerHTML = '<strong>路線:</strong> 空港、旭橋バスターミナル→(高速道路バス停)→名護市役所、名護バスターミナル (終点)';
                 document.getElementById('bus111-detail-note').textContent = '※県庁北には停まりません。本部港、美ら海水族館エリアへは行きません。';
                 document.getElementById('bus111-detail-features').innerHTML = '<strong>特徴:</strong> 名護バスターミナル終点';
                 
-                document.getElementById('bus117-detail-route').innerHTML = '<strong>路線:</strong> 空港、那覇旭橋バスターミナル→名護市役所、名護バスターミナル、本部港、美ら海水族館エリア';
+                document.getElementById('bus117-detail-route').innerHTML = '<strong>路線:</strong> 空港、旭橋バスターミナル→名護市役所、名護バスターミナル、本部港、美ら海水族館エリア';
                 document.getElementById('bus117-detail-note').textContent = '※県庁北には停まりません。';
                 document.getElementById('bus117-detail-features').innerHTML = '<strong>特徴:</strong> 美ら海水族館までの運行便、路線バス';
                 
@@ -479,10 +479,10 @@
                 document.getElementById('ykb-route').textContent = 'Airport, Kencho-kita, Tomari Port → (Highway) → Nago City Office';
                 document.getElementById('ykb-note').textContent = '*Does not stop at Asahibashi Terminal (4 min walk from Kencho-kita)';
                 
-                document.getElementById('bus111-route').textContent = 'Airport, Naha Asahibashi Terminal → (Highway bus stops) → Nago City Office, Nago Bus Terminal';
+                document.getElementById('bus111-route').textContent = 'Airport,  Asahibashi Terminal → (Highway bus stops) → Nago City Office, Nago Bus Terminal';
                 document.getElementById('bus111-note').textContent = '*Does not stop at Kencho-kita. Does not go to Motobu/Churaumi Aquarium area.';
                 
-                document.getElementById('bus117-route').textContent = 'Airport, Naha Asahibashi Terminal → (Highway bus stops) → Nago City Office, Nago Bus Terminal, Motobu, Churaumi Aquarium area';
+                document.getElementById('bus117-route').textContent = 'Airport, Asahibashi Terminal → (Highway bus stops) → Nago City Office, Nago Bus Terminal, Motobu, Churaumi Aquarium area';
                 document.getElementById('bus117-note').textContent = '*Does not stop at Kencho-kita';
                 
                 document.getElementById('bus20-route').textContent = 'Local bus stopping at all stations (not recommended - takes 2.5 hours)';
@@ -520,11 +520,11 @@
                 document.getElementById('ykb-detail-website').innerHTML = '<strong>Website:</strong>';
                 document.getElementById('ykb-detail-features').innerHTML = '<strong>Features:</strong> Fast service via highway, serves northern Okinawa (Yanbaru) areas';
                 
-                document.getElementById('bus111-detail-route').innerHTML = '<strong>Route:</strong> Airport, Naha Asahibashi Terminal → (Highway bus stops) → Nago City Office, Nago Bus Terminal (final stop)';
+                document.getElementById('bus111-detail-route').innerHTML = '<strong>Route:</strong> Airport, Asahibashi Terminal → (Highway bus stops) → Nago City Office, Nago Bus Terminal (final stop)';
                 document.getElementById('bus111-detail-note').textContent = '*Does not stop at Kencho-kita. Does not go to Motobu/Churaumi Aquarium area.';
                 document.getElementById('bus111-detail-features').innerHTML = '<strong>Features:</strong> Frequent service, highway express';
                 
-                document.getElementById('bus117-detail-route').innerHTML = '<strong>Route:</strong> Airport, Naha Asahibashi Terminal → (Highway bus stops) → Nago City Office, Nago Bus Terminal, Motobu, Churaumi Aquarium area';
+                document.getElementById('bus117-detail-route').innerHTML = '<strong>Route:</strong> Airport, Asahibashi Terminal → (Highway bus stops) → Nago City Office, Nago Bus Terminal, Motobu, Churaumi Aquarium area';
                 document.getElementById('bus117-detail-note').textContent = '*Does not stop at Kencho-kita';
                 document.getElementById('bus117-detail-features').innerHTML = '<strong>Features:</strong> Direct service to Churaumi Aquarium, highway express';
                 
